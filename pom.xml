@@ -162,21 +162,6 @@
         </configuration>
       </plugin>
 
-      <!-- Site -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-site-plugin</artifactId>
-        <version>3.7.1</version>
-        <configuration>
-          <siteUrl>https://FakeStu.github.io/Test</siteUrl>
-          <!-- Use the modern Maven Fluido Skin -->
-          <skin>
-            <groupId>org.apache.maven.skins</groupId>
-            <artifactId>maven-fluido-skin</artifactId>
-            <version>1.9</version>
-          </skin>
-        </configuration>
-      </plugin>
 
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
