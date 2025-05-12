@@ -8,8 +8,8 @@ package it.unipd.mtss;
 public class IntegerToRoman {
     public static String convert(int number) {
 
-        String[] roman = {"X","IX","V","IV","I"};
-        int[] arab = {10, 9, 5, 4, 1};
+        String[] roman = {"L","XL","X","IX","V","IV","I"};
+        int[] arab = {50, 40, 10, 9, 5, 4, 1};
 
         StringBuilder result = new StringBuilder();
 
