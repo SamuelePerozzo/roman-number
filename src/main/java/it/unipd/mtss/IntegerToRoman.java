@@ -7,13 +7,19 @@ package it.unipd.mtss;
 
 public class IntegerToRoman {
     public static String convert(int number) {
-        if (number < 1 || number > 3) {
-            throw new IllegalArgumentException("Number must be between 1 and 3");
+
+        String[] roman = {"V","IV","I"};
+        int[] arab = {5,4,1};
+
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i < arab.length; i++) {
+            while (number >= arab[i]) {
+                result.append(roman[i]);
+                number -= arab[i];
+            }
         }
-        String res = "";
-        for (int i = 0; i < number; i++) {
-            res += "I";
-        }
-        return res;
+
+        return result.toString();
     }
 }
