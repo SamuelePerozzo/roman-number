@@ -1,0 +1,6 @@
+# Maven
+target/
+
+# Logs e file temporanei
+*.log
+
