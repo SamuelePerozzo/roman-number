@@ -31,6 +31,16 @@
       <version>5.9.0</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+        <groupId>javax.xml.bind</groupId>
+        <artifactId>jaxb-api</artifactId>
+        <version>2.3.1</version>
+    </dependency>
+    <dependency>
+        <groupId>org.glassfish.jaxb</groupId>
+        <artifactId>jaxb-runtime</artifactId>
+        <version>2.3.1</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -143,7 +153,21 @@
         </executions>
       </plugin>
 
-    <!-- Coveralls verrà imolementato tramite GithubActions, best practice consigliata da coveralls -->
+      <plugin>
+      <groupId>org.eluder.coveralls</groupId>
+      <artifactId>coveralls-maven-plugin</artifactId>
+      <version>4.3.0</version>
+      <executions>
+        <execution>
+          <goals>
+            <goal>report</goal>
+          </goals>
+        </execution>
+      </executions>
+      <configuration>
+        <repoToken>1X7YDs3m2PLeHnCV68btgVIF2KWuM6hYD</repoToken>
+      </configuration>
+    </plugin>
      
     </plugins>
   </build>
